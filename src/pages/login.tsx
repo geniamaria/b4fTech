@@ -24,9 +24,10 @@ const formSchema = z.object({
   email: z.string().min(2, {
     message: "Email Invalido.",
   }),
-  Password: z.string().min(2, {
-    message: "Messagem muito curta.",
-  }),
+  password: z
+    .string()
+    .nonempty("Senha obrigatoria para o cadastro !")
+    .min(6, "A senha deve conter no mínimo 6 caracteres !"),
 });
 
 export const Login = () => {
