@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { About, Courses, Home, Contactos, Login } from "./pages";
+import { About, Courses, Home, Contactos, Login, Comunidade } from "./pages";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "/contactos",
     element: <Contactos />,
+  },
+  {
+    path: "/comunidade",
+    element: <Comunidade />,
   },
   {
     path: "/login",

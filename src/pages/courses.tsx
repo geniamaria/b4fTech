@@ -308,9 +308,7 @@ export const Courses = () => {
               <h2 className="text-xl font-semibold mb-2">{course.title}</h2>
               <p className="text-gray-700 mb-4"> Nivel: {course.level}</p>
               <p className="text-gray-700 mb-4"> Idioma: {course.language}</p>
-              <p className="text-gray-700 mb-4">
-                Duração: {course.durationInHours}
-              </p>
+              <p className="text-gray-700 mb-4">Duração: {course.duration}</p>
               <p
                 className={`bg-white shadow-md w-fit rounded-lg p-3 ${
                   course.isFree
